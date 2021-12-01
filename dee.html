@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Huston Dee</title>
+	<style type="text/css">
+		table {
+    font-size:16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: #04AA6D;
+    color: white;
+}
+	</style>
+    <script type="text/javascript">
+        var points = Number($("#P1").html()) + Number($("#P2").html()) + Number($("#P3").html());
+        var assists = Number($("#A1").html()) + Number($("#A2").html()) + Number($("#A3").html());
+        var rebounds = Number($("#R1").html()) + Number($("#R2").html()) + Number($("#R3").html());
+        var steals = Number($("#S1").html()) + Number($("#S2").html()) + Number($("#S3").html());
+        var blocks = Number($("#B1").html()) + Number($("#B2").html()) + Number($("#B3").html());
+        document.getElementById("TP").innerHTML = points
+        document.getElementById("TA").innerHTML = assists
+        document.getElementById("TR").innerHTML = rebounds
+        document.getElementById("TS").innerHTML = steals
+        document.getElementById("TB").innerHTML = blocks
+    </script>
+</head>
+<body>
+    <img src="https://github.com/diegoakeller/parksharonscavs/blob/main/nathanChilders.png?raw=true">
+	<h1>Huston Dee</h1>
+	<h3>Height: 5'5"</h3>
+    <h3><strong>Stats Per Game</strong></h3>
+    <table>
+        <tr>
+            <td>W/L</td>
+            <td>Opponent</td>
+            <td>Date</td>
+            <td>Final Score</td>
+            <td>Points</td>
+            <td>Assists</td>
+            <td>Rebounds</td>
+            <td>Steals</td>
+            <td>Blocks</td>
+            <td>Full Team Game Stats</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Grizzlies</td>
+            <td>December 4th, 2021</td>
+            <td></td>
+            <td id="P1"></td>
+            <td id="A1"></td>
+            <td id="R1"></td>
+            <td id="S1"></td>
+            <td id="B1"></td>
+            <td><a>link</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Pistons</td>
+            <td>December 11th, 2021</td>
+            <td></td>
+            <td id="P2"></td>
+            <td id="A2"></td>
+            <td id="R2"></td>
+            <td id="S2"></td>
+            <td id="B2"></td>
+            <td><a>link</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Lakers</td>
+            <td>December 19th, 2021</td>
+            <td></td>
+            <td id="P3"></td>
+            <td id="A3"></td>
+            <td id="R3"></td>
+            <td id="S3"></td>
+            <td id="B3"></td>
+            <td><a>link</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>TOTAL STATS</td>
+            <td></td>
+            <td></td>
+            <td id="TP"></td>
+            <td id="TA"></td>
+            <td id="TR"></td>
+            <td id="TS"></td>
+            <td id="TB"></td>
+            <td ><a></a></td>
+        </tr>
+
+</body>
